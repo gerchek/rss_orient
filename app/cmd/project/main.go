@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"rss/internal/app"
 	"rss/internal/setup/constructor"
 	"rss/internal/setup/routes"
@@ -20,7 +19,6 @@ func main() {
 	constructor.SetConstructor(client, logger)
 
 	logger.Info("initializing a new app...")
-	fmt.Println("hi")
 	var r routes.MyRoute
 	go r.Routes()
 

@@ -5,6 +5,8 @@ import (
 	"log"
 	"os"
 
+	"rss/internal/model"
+
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -34,7 +36,7 @@ func NewClient() (client *gorm.DB, err error) {
 		log.Fatalln(err)
 	}
 
-	// db.AutoMigrate(&model.Post{})
+	db.AutoMigrate(&model.Post{}, &model.Link{})
 
 	return db, err
 }
