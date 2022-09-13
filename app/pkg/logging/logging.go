@@ -3,14 +3,13 @@ package logging
 import (
 	"fmt"
 	"io"
-//	"io/ioutil"
-	"os"
+	"io/ioutil"
+	"path"
 	"runtime"
 
+	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/sirupsen/logrus"
 )
-
-const logFile = "logs/project.log"
 
 type writerHook struct {
 	Writer    []io.Writer
@@ -41,30 +40,27 @@ func init() {
 	// log to console and file
 	log.SetReportCaller(true)
 
-	log.SetFormatter(&logrus.TextFormatter{
+	log.SetFormatter(&logrus.JSONFormatter{
 		CallerPrettyfier: func(f *runtime.Frame) (function string, file string) {
-			filename := f.File
+			// filename := f.File
+			_, filename := path.Split(f.File)
 			return fmt.Sprintf("%s()", f.Function), fmt.Sprintf("%s:%d", filename, f.Line)
 		},
 	})
 
-//	log.Out = ioutil.Discard
+	log.Out = ioutil.Discard
 
-	f, err := os.OpenFile("logs/project.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	rl, err := rotatelogs.New("/home/ata/tps/rss_orient/app/cmd/project/logs/rss_log.%Y-%m-%d")
+	// rl, err := rotatelogs.New("/var/www/e.gov.tm.payments/logs/payment_log.%Y-%m-%d")
+
 	if err != nil {
 		log.Fatalf("error opening file: %v", err)
 	}
 
-	// wrt := io.MultiWriter(os.Stdout, f)
-
-	// log.SetOutput(wrt)
-
-	// log.SetOutput(io.MultiWriter(f, os.Stdout))
-
-//	log.SetOutput(io.Discard)
+	log.SetOutput(io.Discard)
 
 	log.AddHook(&writerHook{
-		Writer:    []io.Writer{f},
+		Writer:    []io.Writer{rl},
 		LogLevels: logrus.AllLevels,
 	})
 

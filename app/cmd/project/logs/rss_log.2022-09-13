@@ -1,0 +1,25 @@
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:02:50+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:02:50+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:03:20+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:03:20+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:04:30+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:04:30+05:00"}
+{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"unknown field in sortBy query parameter","time":"2022-09-13T09:05:12+05:00"}
+{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"unknown field in sortBy query parameter","time":"2022-09-13T09:05:17+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:13:40+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:13:40+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:16:03+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:16:03+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:17:24+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:17:24+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:22:33+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:22:33+05:00"}
+{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:22:34+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:25:01+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:25:01+05:00"}
+{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:25:10+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:25:59+05:00"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:25:59+05:00"}
+{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:01+05:00"}
+{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:09+05:00"}
+{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:27+05:00"}

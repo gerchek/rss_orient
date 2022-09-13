@@ -1,12 +1,14 @@
 package constructor
 
 import (
-	rssConstructor "rss/internal/services/rss/constructor"
+	fetchPostsConstructor "rss/internal/services/fetchPosts/constructor"
+	rssLinksConstructor "rss/internal/services/rssLinks/constructor"
 
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )
 
 func SetConstructor(client *gorm.DB, logger *logrus.Logger) {
-	rssConstructor.RssRequirementsCreator(client, logger)
+	fetchPostsConstructor.FetchPostsRequirementsCreator(client, logger)
+	rssLinksConstructor.RssLinksRequirementsCreator(client, logger)
 }

@@ -36,7 +36,7 @@ func NewClient() (client *gorm.DB, err error) {
 		log.Fatalln(err)
 	}
 
-	db.AutoMigrate(&model.Post{}, &model.Link{})
+	db.AutoMigrate(&model.Post{}, &model.Link{}, &model.History{})
 
 	return db, err
 }

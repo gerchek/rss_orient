@@ -2,18 +2,13 @@ package service
 
 import (
 	"rss/internal/model"
-	"rss/internal/services/rss/dto"
-	"rss/internal/services/rss/storage"
-	"strings"
+	"rss/internal/services/rssLinks/dto"
+	"rss/internal/services/rssLinks/storage"
 
-	"github.com/SlyMarbo/rss"
 	"github.com/sirupsen/logrus"
 )
 
-type RssService interface {
-	Fetch(link string)
-	// FetchOrient()
-	GetAllPosts() (data []*model.Post, err error)
+type RssLinksService interface {
 	// Links
 	LinkAll() ([]*model.Link, error)
 	LinkCreate(linkDto dto.LinkDto) (*model.Link, error)
@@ -22,40 +17,20 @@ type RssService interface {
 	LinkFindByID(id int) (*model.Link, error)
 }
 
-type rssService struct {
-	storage storage.RssStorage
+type rssLinksService struct {
+	storage storage.RssLinksStorage
 	logger  *logrus.Logger
 }
 
-func NewRssService(storage storage.RssStorage, logger *logrus.Logger) RssService {
-	return &rssService{
+func NewRssLinksService(storage storage.RssLinksStorage, logger *logrus.Logger) RssLinksService {
+	return &rssLinksService{
 		storage: storage,
 		logger:  logger,
 	}
 }
 
-func (s *rssService) Fetch(link string) {
-	feed, err := rss.Fetch(link)
-	if err != nil {
-		s.logger.Warn(err)
-	} else {
-		category := strings.Split(link, "/")
-		s.storage.CreatePosts(feed.Items, category[2])
-	}
-
-}
-
-func (s *rssService) GetAllPosts() (data []*model.Post, err error) {
-	posts, err := s.storage.GetAll()
-	if err != nil {
-		return nil, err
-	} else {
-		return posts, nil
-	}
-}
-
 // GET ALL LINKS
-func (s *rssService) LinkAll() ([]*model.Link, error) {
+func (s *rssLinksService) LinkAll() ([]*model.Link, error) {
 	links, err := s.storage.LinkAll()
 	if err != nil {
 		return nil, err
@@ -65,7 +40,7 @@ func (s *rssService) LinkAll() ([]*model.Link, error) {
 }
 
 // CREATE LINK
-func (s *rssService) LinkCreate(linkDto dto.LinkDto) (*model.Link, error) {
+func (s *rssLinksService) LinkCreate(linkDto dto.LinkDto) (*model.Link, error) {
 	link := &model.Link{
 		Link: linkDto.Link,
 	}
@@ -77,7 +52,7 @@ func (s *rssService) LinkCreate(linkDto dto.LinkDto) (*model.Link, error) {
 }
 
 // LINK FIND BY ID
-func (s *rssService) LinkFindByID(id int) (data *model.Link, err error) {
+func (s *rssLinksService) LinkFindByID(id int) (data *model.Link, err error) {
 	var link model.Link
 	data, err = s.storage.LinkFindByID(&link, id)
 	if err != nil {
@@ -87,7 +62,7 @@ func (s *rssService) LinkFindByID(id int) (data *model.Link, err error) {
 }
 
 // LINK DELETE
-func (s *rssService) LinkDelete(id int) error {
+func (s *rssLinksService) LinkDelete(id int) error {
 	var link model.Link
 	_, err := s.storage.LinkFindByID(&link, id)
 	if err != nil {
@@ -101,7 +76,7 @@ func (s *rssService) LinkDelete(id int) error {
 }
 
 // LINK UPDATE
-func (s *rssService) LinkUpdate(linkDTO dto.LinkDto, id int) (data *model.Link, err error) {
+func (s *rssLinksService) LinkUpdate(linkDTO dto.LinkDto, id int) (data *model.Link, err error) {
 	var oldLink model.Link
 	_, err = s.storage.LinkFindByID(&oldLink, id)
 	if err != nil {

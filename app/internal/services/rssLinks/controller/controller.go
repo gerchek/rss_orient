@@ -3,23 +3,17 @@ package controller
 import (
 	"encoding/json"
 	"net/http"
-	"rss/internal/services/rss/dto"
-	"rss/internal/services/rss/service"
+	"rss/internal/services/rssLinks/dto"
+	"rss/internal/services/rssLinks/service"
 	"rss/internal/utils/customvalidator"
 	"rss/pkg/responses"
 	"strconv"
-	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
 )
 
-type RssController interface {
-	// Fetch posts
-	Fetch()
-	// Get posts
-	GetAllPosts(w http.ResponseWriter, r *http.Request)
+type RssLinksController interface {
 	// Links
 	LinkAll(w http.ResponseWriter, r *http.Request)
 	LinkCreate(w http.ResponseWriter, r *http.Request)
@@ -27,65 +21,21 @@ type RssController interface {
 	LinkUpdate(w http.ResponseWriter, r *http.Request)
 }
 
-type rssController struct {
-	service service.RssService
+type rssLinksController struct {
+	service service.RssLinksService
 	logger  *logrus.Logger
 }
 
-func NewRssController(service service.RssService, logger *logrus.Logger) RssController {
-	return &rssController{
+func NewRssLinksController(service service.RssLinksService, logger *logrus.Logger) RssLinksController {
+	return &rssLinksController{
 		service: service,
 		logger:  logger,
 	}
 }
 
-func (c *rssController) Fetch() {
-	err := godotenv.Load("../../.env")
-	if err != nil {
-		c.logger.Warn(err)
-	}
-
-	// time_sleep := os.Getenv("TIME_SLEEP")
-	// i, err := strconv.Atoi(time_sleep)
-	// if err != nil {
-	// 	c.logger.Warn(err)
-	// }
-	// for {
-	// 	go c.service.FetchTurkmenPortal()
-	// 	go c.service.FetchOrient()
-	// 	time.Sleep(time.Duration(int(i)) * time.Minute)
-	// }
-	for {
-		links, err := c.service.LinkAll()
-		if err != nil {
-			c.logger.Warn(err)
-		}
-		for i := 0; i < len(links); i++ {
-			c.service.Fetch(links[i].Link)
-		}
-		time.Sleep(10 * time.Second)
-	}
-}
-
-func (c *rssController) GetAllPosts(w http.ResponseWriter, r *http.Request) {
-	posts, err := c.service.GetAllPosts()
-	if err != nil {
-		json.NewEncoder(w).Encode(err)
-		w.WriteHeader(http.StatusInternalServerError)
-		response := responses.UserResponse{Status: http.StatusInternalServerError, Message: "error", Data: err.Error()}
-		json.NewEncoder(w).Encode(response)
-		return
-	} else {
-		w.WriteHeader(http.StatusCreated)
-		response := responses.UserResponse{Status: http.StatusOK, Message: "success", Data: posts}
-		json.NewEncoder(w).Encode(response)
-		return
-	}
-}
-
 // LINKS
 
-func (c *rssController) LinkAll(w http.ResponseWriter, r *http.Request) {
+func (c *rssLinksController) LinkAll(w http.ResponseWriter, r *http.Request) {
 	links, err := c.service.LinkAll()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -100,7 +50,7 @@ func (c *rssController) LinkAll(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (c *rssController) LinkCreate(w http.ResponseWriter, r *http.Request) {
+func (c *rssLinksController) LinkCreate(w http.ResponseWriter, r *http.Request) {
 	var linkCreateDTO dto.LinkDto
 	err := json.NewDecoder(r.Body).Decode(&linkCreateDTO)
 	if err != nil {
@@ -128,7 +78,7 @@ func (c *rssController) LinkCreate(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(response)
 }
 
-func (c *rssController) LinkDelete(w http.ResponseWriter, r *http.Request) {
+func (c *rssLinksController) LinkDelete(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	userId := params["id"]
 	// id = int(userId)
@@ -158,7 +108,7 @@ func (c *rssController) LinkDelete(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(response)
 }
 
-func (c *rssController) LinkUpdate(w http.ResponseWriter, r *http.Request) {
+func (c *rssLinksController) LinkUpdate(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	userId := params["id"]
 	// id = int(userId)

@@ -1,11 +1,11 @@
 package app
 
 import (
-	"rss/internal/services/rss/constructor"
+	"rss/internal/services/fetchPosts/constructor"
 
 	"github.com/sirupsen/logrus"
 )
 
 func NewApp(logger *logrus.Logger) {
-	constructor.RssController.Fetch()
+	constructor.FetchPostsController.Fetch()
 }

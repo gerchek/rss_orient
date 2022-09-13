@@ -3,7 +3,8 @@ package routes
 import (
 	"log"
 	"net/http"
-	"rss/internal/services/rss/constructor"
+	fetchPostsConstructor "rss/internal/services/fetchPosts/constructor"
+	rssLinksConstructor "rss/internal/services/rssLinks/constructor"
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
@@ -15,12 +16,12 @@ type MyRoute struct {
 func (rr *MyRoute) Routes() {
 	r := mux.NewRouter().StrictSlash(true)
 	// POSTS
-	r.HandleFunc("/posts", constructor.RssController.GetAllPosts).Methods("GET")
+	r.HandleFunc("/posts", fetchPostsConstructor.FetchPostsController.GetAllPosts).Methods("GET")
 	// LINKS
-	r.HandleFunc("/links/all", constructor.RssController.LinkAll).Methods("GET")
-	r.HandleFunc("/link/create", constructor.RssController.LinkCreate).Methods("POST")
-	r.HandleFunc("/link/delete/{id}", constructor.RssController.LinkDelete).Methods("DELETE")
-	r.HandleFunc("/link/update/{id}", constructor.RssController.LinkUpdate).Methods("PUT")
+	r.HandleFunc("/links/all", rssLinksConstructor.RssLinksController.LinkAll).Methods("GET")
+	r.HandleFunc("/link/create", rssLinksConstructor.RssLinksController.LinkCreate).Methods("POST")
+	r.HandleFunc("/link/delete/{id}", rssLinksConstructor.RssLinksController.LinkDelete).Methods("DELETE")
+	r.HandleFunc("/link/update/{id}", rssLinksConstructor.RssLinksController.LinkUpdate).Methods("PUT")
 
 	headersOk := handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type"})
 	originsOk := handlers.AllowedOrigins([]string{"*"})
