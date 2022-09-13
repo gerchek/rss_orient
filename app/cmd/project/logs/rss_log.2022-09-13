@@ -1,2 +1,11 @@
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T12:09:32Z"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T12:09:32Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T13:52:51Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T13:52:51Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: i/o timeout","time":"2022-09-13T13:53:42Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://business.com.tm/rss: dial tcp: i/o timeout","time":"2022-09-13T13:54:22Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/en/rss: dial tcp: i/o timeout","time":"2022-09-13T13:55:02Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://business.com.tm/rss: dial tcp: i/o timeout","time":"2022-09-13T14:06:43Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: i/o timeout","time":"2022-09-13T14:17:33Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: lookup turkmenportal.com: Temporary failure in name resolution","time":"2022-09-13T14:18:11Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/en/rss: dial tcp: lookup turkmenportal.com: No address associated with hostname","time":"2022-09-13T14:19:20Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: lookup www.atavatan-turkmenistan.com: Temporary failure in name resolution","time":"2022-09-13T14:29:58Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: lookup turkmenportal.com: Temporary failure in name resolution","time":"2022-09-13T14:30:36Z"}

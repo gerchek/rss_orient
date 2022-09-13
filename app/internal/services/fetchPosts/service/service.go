@@ -3,14 +3,14 @@ package service
 import (
 	"rss/internal/model"
 	"rss/internal/services/fetchPosts/storage"
-	"strings"
+
 
 	"github.com/SlyMarbo/rss"
 	"github.com/sirupsen/logrus"
 )
 
 type FetchPostsService interface {
-	Fetch(link string)
+	Fetch(link *model.Link)
 	// FetchOrient()
 	GetAllPosts(parameters map[string]interface{}) (data []*model.Post, err error)
 	// ALL LINKS
@@ -29,13 +29,12 @@ func NewFetchPostsService(storage storage.FetchPostsStorage, logger *logrus.Logg
 	}
 }
 
-func (s *fetchPostsService) Fetch(link string) {
-	feed, err := rss.Fetch(link)
+func (s *fetchPostsService) Fetch(link *model.Link) {
+	feed, err := rss.Fetch(link.Source)
 	if err != nil {
 		s.logger.Warn(err)
 	} else {
-		category := strings.Split(link, "/")
-		s.storage.CreatePosts(feed.Items, category[2])
+		s.storage.CreatePosts(feed.Items, link.Name)
 	}
 
 }

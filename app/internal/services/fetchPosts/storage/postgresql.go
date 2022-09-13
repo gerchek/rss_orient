@@ -62,7 +62,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*rss.Item, category string) {
 				if err != nil {
 					db.logger.Warn(err)
 				}
-				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Update("date", post.Publish_date).Error; err != nil {
+				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Update("publish_date", post.Publish_date).Error; err != nil {
 					db.logger.Warn(err)
 				}
 			}
