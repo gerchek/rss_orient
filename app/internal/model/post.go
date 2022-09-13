@@ -15,7 +15,8 @@ type Post struct {
 }
 
 type History struct {
-	Updated string `json:"updated"`
+	Old_published_at time.Time `json:"old_published_at"`
+	New_published_at time.Time `json:"new_published_at"`
 	PostID  uint64
 	// Post      Post      `gorm:"foreignKey:ID"`
 	CreatedAt time.Time `json:"createdAt"`
