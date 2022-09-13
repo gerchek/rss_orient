@@ -2,7 +2,6 @@ package storage
 
 import (
 	"errors"
-	"fmt"
 	"rss/internal/model"
 
 	"github.com/sirupsen/logrus"
@@ -47,7 +46,6 @@ func (db *rssLinksStorage) LinkCreate(link *model.Link) (*model.Link, error) {
 	// return link, nil
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	r := db.client.Where("link = ?", link.Link).Limit(1).Find(&link)
-	fmt.Println(r.RowsAffected)
 	if r.RowsAffected == 0 {
 		if err := db.client.Create(link).Error; err != nil {
 			return nil, err

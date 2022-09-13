@@ -98,6 +98,9 @@ func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*
 	}
 	// filter start
 	// filter end
+	if sortBy == "" {
+		sortBy = "id.asc"
+	}
 	sortQuery, err := db.validateAndReturnSortQuery(sortBy)
 	if err != nil {
 		db.logger.Warn(err)

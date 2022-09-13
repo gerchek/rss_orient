@@ -27,5 +27,5 @@ func (rr *MyRoute) Routes() {
 	originsOk := handlers.AllowedOrigins([]string{"*"})
 	methodsOk := handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "OPTIONS", "Delete"})
 
-	log.Fatal(http.ListenAndServe(":8080", handlers.CORS(originsOk, headersOk, methodsOk)(r)))
+	log.Fatal(http.ListenAndServe("95.85.124.41:8080", handlers.CORS(originsOk, headersOk, methodsOk)(r)))
 }

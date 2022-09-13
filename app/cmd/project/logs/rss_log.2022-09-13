@@ -1,25 +1,23 @@
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:02:50+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:02:50+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:03:20+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:03:20+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:04:30+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:04:30+05:00"}
-{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"unknown field in sortBy query parameter","time":"2022-09-13T09:05:12+05:00"}
-{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"unknown field in sortBy query parameter","time":"2022-09-13T09:05:17+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:13:40+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:13:40+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:16:03+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:16:03+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:17:24+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:17:24+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:22:33+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:22:33+05:00"}
-{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:22:34+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:25:01+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:25:01+05:00"}
-{"file":"postgresql.go:112","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:25:10+05:00"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T09:25:59+05:00"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T09:25:59+05:00"}
-{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:01+05:00"}
-{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:09+05:00"}
-{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T09:26:27+05:00"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T04:38:53Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T04:38:53Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:39:10Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:40:12Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:40:13Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:40:13Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T04:42:19Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T04:42:19Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:42:23Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:42:24Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:42:25Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: lookup turkmenportal.com: Temporary failure in name resolution","time":"2022-09-13T04:42:34Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:42:40Z"}
+{"file":"postgresql.go:103","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:43:07Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T04:51:19Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T04:51:19Z"}
+{"file":"postgresql.go:106","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:52:03Z"}
+{"file":"postgresql.go:106","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed sortBy query parameter, should be field.orderdirection","time":"2022-09-13T04:52:17Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T05:00:15Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T05:00:15Z"}
+{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: lookup turkmenportal.com: Temporary failure in name resolution","time":"2022-09-13T05:00:30Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T05:00:46Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T05:00:46Z"}

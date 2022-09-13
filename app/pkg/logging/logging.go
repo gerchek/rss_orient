@@ -50,14 +50,14 @@ func init() {
 
 	log.Out = ioutil.Discard
 
-	rl, err := rotatelogs.New("/home/ata/tps/rss_orient/app/cmd/project/logs/rss_log.%Y-%m-%d")
-	// rl, err := rotatelogs.New("/var/www/e.gov.tm.payments/logs/payment_log.%Y-%m-%d")
+	//rl, err := rotatelogs.New("/home/ata/tps/rss_orient/app/cmd/project/logs/rss_log.%Y-%m-%d")
+	 rl, err := rotatelogs.New("/var/www/rss/app/cmd/project/logs/rss_log.%Y-%m-%d")
 
 	if err != nil {
 		log.Fatalf("error opening file: %v", err)
 	}
 
-	log.SetOutput(io.Discard)
+	//log.SetOutput(io.Discard)
 
 	log.AddHook(&writerHook{
 		Writer:    []io.Writer{rl},
