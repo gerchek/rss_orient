@@ -45,7 +45,7 @@ func (db *rssLinksStorage) LinkCreate(link *model.Link) (*model.Link, error) {
 	// }
 	// return link, nil
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	r := db.client.Where("link = ?", link.Link).Limit(1).Find(&link)
+	r := db.client.Where("source = ?", link.Source).Limit(1).Find(&link)
 	if r.RowsAffected == 0 {
 		if err := db.client.Create(link).Error; err != nil {
 			return nil, err

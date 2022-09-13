@@ -42,7 +42,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*rss.Item, category string) {
 			Category: category,
 			Title:    item.Title,
 			Link:     item.Link,
-			Date:     item.Date,
+			Publish_date:     item.Date,
 			Summary:  item.Summary,
 		}
 		old_post := post
@@ -51,18 +51,18 @@ func (db *fetchPostsStorage) CreatePosts(items []*rss.Item, category string) {
 		if r.RowsAffected == 0 {
 			db.client.Create(&post)
 		} else {
-			if old_post.Date != post.Date {
+			if old_post.Publish_date != post.Publish_date {
 				//str := fmt.Sprintf("%s updated to %s", post.Date, new_post.Date)
 				history := model.History{
-					Old_published_at: old_post.Date,
-					New_published_at: post.Date,
+					Old_published_at: old_post.Publish_date,
+					New_published_at: post.Publish_date,
 					PostID:           old_post.ID,
 				}
 				err := db.client.Model(&old_post).Association("HistoryList").Append(&history)
 				if err != nil {
 					db.logger.Warn(err)
 				}
-				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Update("date", post.Date).Error; err != nil {
+				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Update("date", post.Publish_date).Error; err != nil {
 					db.logger.Warn(err)
 				}
 			}

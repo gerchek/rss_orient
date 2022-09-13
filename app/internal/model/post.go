@@ -7,7 +7,7 @@ type Post struct {
 	Category    string    `json:"category"`
 	Title       string    `json:"title"`
 	Link        string    `gorm:"unique" json:"link"`
-	Date        time.Time `json:"date"`
+	Publish_date        time.Time `json:"publish_date"`
 	Summary     string    `json:"summary"`
 	HistoryList []History `gorm:"foreignKey:PostID;constraint:onDelete:SET NULL,onUpdate:CASCADE"`
 	CreatedAt   time.Time `json:"createdAt"`

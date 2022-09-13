@@ -54,7 +54,7 @@ func (c *fetchPostsController) Fetch() {
 			c.logger.Warn(err)
 		}
 		for i := 0; i < len(links); i++ {
-			c.service.Fetch(links[i].Link)
+			c.service.Fetch(links[i].Source)
 		}
 		time.Sleep(time.Duration(int(i)) * time.Minute)
 	}

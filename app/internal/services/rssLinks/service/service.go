@@ -42,7 +42,8 @@ func (s *rssLinksService) LinkAll() ([]*model.Link, error) {
 // CREATE LINK
 func (s *rssLinksService) LinkCreate(linkDto dto.LinkDto) (*model.Link, error) {
 	link := &model.Link{
-		Link: linkDto.Link,
+		Name:   linkDto.Name,
+		Source: linkDto.Source,
 	}
 	link, err := s.storage.LinkCreate(link)
 	if err != nil {
@@ -82,7 +83,10 @@ func (s *rssLinksService) LinkUpdate(linkDTO dto.LinkDto, id int) (data *model.L
 	if err != nil {
 		return nil, err
 	}
-	oldLink.Link = linkDTO.Link
+
+	oldLink.Source = linkDTO.Source
+	oldLink.Name = linkDTO.Name
+
 	data, err = s.storage.LinkUpdate(&oldLink)
 	if err != nil {
 		return nil, err

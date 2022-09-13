@@ -1,5 +1,2 @@
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T11:12:48Z"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T11:12:48Z"}
-{"file":"service.go:35","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp: i/o timeout","time":"2022-09-13T11:13:18Z"}
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T11:14:10Z"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T11:14:10Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-13T12:09:32Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-13T12:09:32Z"}
