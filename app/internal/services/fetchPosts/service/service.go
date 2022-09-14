@@ -1,11 +1,12 @@
 package service
 
 import (
+	"context"
 	"rss/internal/model"
 	"rss/internal/services/fetchPosts/storage"
+	"time"
 
-
-	"github.com/SlyMarbo/rss"
+	"github.com/mmcdole/gofeed"
 	"github.com/sirupsen/logrus"
 )
 
@@ -30,7 +31,10 @@ func NewFetchPostsService(storage storage.FetchPostsStorage, logger *logrus.Logg
 }
 
 func (s *fetchPostsService) Fetch(link *model.Link) {
-	feed, err := rss.Fetch(link.Source)
+	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
+	defer cancel()
+	fp := gofeed.NewParser()
+	feed, err := fp.ParseURLWithContext(link.Source, ctx)
 	if err != nil {
 		s.logger.Warn(err)
 	} else {

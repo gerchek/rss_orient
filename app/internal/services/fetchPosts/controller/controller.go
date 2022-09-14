@@ -55,7 +55,6 @@ func (c *fetchPostsController) Fetch() {
 		}
 		for i := 0; i < len(links); i++ {
 			c.service.Fetch(links[i])
-			time.Sleep(10 * time.Second)
 		}
 		time.Sleep(time.Duration(int(i)) * time.Minute)
 	}

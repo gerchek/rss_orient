@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/SlyMarbo/rss"
+	"github.com/mmcdole/gofeed"
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )
 
 type FetchPostsStorage interface {
-	CreatePosts(items []*rss.Item, category string)
+	CreatePosts(items []*gofeed.Item, category string)
 	GetAll(parameters map[string]interface{}) (data []*model.Post, err error)
 	// Links
 	LinkAll() ([]*model.Link, error)
@@ -36,14 +36,14 @@ func NewFetchPostsStorage(client *gorm.DB, logger *logrus.Logger) FetchPostsStor
 	}
 }
 
-func (db *fetchPostsStorage) CreatePosts(items []*rss.Item, category string) {
+func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) {
 	for _, item := range items {
 		post := model.Post{
 			Category: category,
 			Title:    item.Title,
 			Link:     item.Link,
-			Publish_date:     item.Date,
-			Summary:  item.Summary,
+			Publish_date:     item.Published,
+			Summary:  item.Description,
 		}
 		old_post := post
 

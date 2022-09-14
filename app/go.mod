@@ -3,7 +3,7 @@ module rss
 go 1.13.8
 
 require (
-	github.com/SlyMarbo/rss v1.0.3
+	github.com/SlyMarbo/rss v1.0.3 // indirect
 	github.com/go-playground/validator/v10 v10.11.0
 	github.com/gorilla/mux v1.8.0
 	github.com/joho/godotenv v1.4.0
@@ -20,4 +20,5 @@ require (
 require (
 	github.com/gorilla/handlers v1.5.1
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
+	github.com/mmcdole/gofeed v1.1.3
 )
