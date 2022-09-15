@@ -1,12 +1,9 @@
 package storage
 
 import (
-	"errors"
-	"fmt"
-	"reflect"
 	"rss/internal/model"
+	"rss/pkg/gormquery"
 	"strconv"
-	"strings"
 
 	"github.com/mmcdole/gofeed"
 	"github.com/sirupsen/logrus"
@@ -18,10 +15,6 @@ type FetchPostsStorage interface {
 	GetAll(parameters map[string]interface{}) (data []*model.Post, err error)
 	// Links
 	LinkAll() ([]*model.Link, error)
-	getPostFields() []string
-	validateAndReturnSortQuery(sortBy string) (string, error)
-	validateAndReturnFilterMap(filter string) (map[string]string, error)
-	stringInSlice(strSlice []string, s string) bool
 }
 
 type fetchPostsStorage struct {
@@ -39,11 +32,11 @@ func NewFetchPostsStorage(client *gorm.DB, logger *logrus.Logger) FetchPostsStor
 func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) {
 	for _, item := range items {
 		post := model.Post{
-			Category: category,
-			Title:    item.Title,
-			Link:     item.Link,
-			Publish_date:     item.Published,
-			Summary:  item.Description,
+			Category:     category,
+			Title:        item.Title,
+			Link:         item.Link,
+			Publish_date: item.Published,
+			Summary:      item.Description,
 		}
 		old_post := post
 
@@ -71,6 +64,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 }
 
 func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*model.Post, err error) {
+
 	if parameters["sortBy"] == nil {
 		parameters["sortBy"] = "id.asc"
 	}
@@ -94,12 +88,10 @@ func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*
 			db.logger.Warn(err)
 		}
 	}
-	// filter start
-	// filter end
 	if sortBy == "" {
 		sortBy = "id.asc"
 	}
-	sortQuery, err := db.validateAndReturnSortQuery(sortBy)
+	sortQuery, err := gormquery.ValidateAndReturnSortQuery(sortBy)
 	if err != nil {
 		db.logger.Warn(err)
 	}
@@ -120,58 +112,3 @@ func (db *fetchPostsStorage) LinkAll() ([]*model.Link, error) {
 	}
 	return links, nil
 }
-
-// ---------------------------------------------sortBy start------------------------------------------------------------
-
-func (db *fetchPostsStorage) getPostFields() []string {
-	var field []string
-	var test model.Post
-	v := reflect.ValueOf(test)
-	for i := 0; i < v.Type().NumField(); i++ {
-		field = append(field, v.Type().Field(i).Tag.Get("json"))
-	}
-	return field
-}
-
-func (db *fetchPostsStorage) validateAndReturnSortQuery(sortBy string) (string, error) {
-	var userFields = db.getPostFields()
-	splits := strings.Split(sortBy, ".")
-	if len(splits) != 2 {
-		return "", errors.New("malformed sortBy query parameter, should be field.orderdirection")
-	}
-	field, order := splits[0], splits[1]
-	if order != "desc" && order != "asc" {
-		return "", errors.New("malformed orderdirection in sortBy query parameter, should be asc or desc")
-	}
-	if !db.stringInSlice(userFields, field) {
-		return "", errors.New("unknown field in sortBy query parameter")
-	}
-	return fmt.Sprintf("%s %s", field, strings.ToUpper(order)), nil
-}
-
-func (db *fetchPostsStorage) stringInSlice(strSlice []string, s string) bool {
-	for _, v := range strSlice {
-		if v == s {
-			return true
-		}
-	}
-	return false
-}
-
-// ---------------------------------------------sortBy end------------------------------------------------------------
-// ---------------------------------------------filter start------------------------------------------------------------
-
-func (db *fetchPostsStorage) validateAndReturnFilterMap(filter string) (map[string]string, error) {
-	var userFields = db.getPostFields()
-	splits := strings.Split(filter, ".")
-	if len(splits) != 2 {
-		return nil, errors.New("malformed sortBy query parameter, should be field.orderdirection")
-	}
-	field, value := splits[0], splits[1]
-	if !db.stringInSlice(userFields, field) {
-		return nil, errors.New("unknown field in filter query parameter")
-	}
-	return map[string]string{field: value}, nil
-}
-
-// ---------------------------------------------filter end------------------------------------------------------------
