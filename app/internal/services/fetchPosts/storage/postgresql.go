@@ -35,7 +35,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 			Category:     category,
 			Title:        item.Title,
 			Link:         item.Link,
-			Publish_date: item.Published,
+			Publish_date: item.PublishedParsed,
 			Summary:      item.Description,
 		}
 		old_post := post
@@ -72,7 +72,14 @@ func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*
 	sortBy := parameters["sortBy"].(string)
 	strLimit := parameters["strLimit"].(string)
 	strOffset := parameters["strOffset"].(string)
-	filter := parameters["filter"].(string)
+	category := parameters["category"].(string)
+	// filter by field
+	fil_title := parameters["fil_title"].(string)
+	fil_link := parameters["fil_link"].(string)
+	fil_publish_date := parameters["fil_publish_date"].(string)
+	fil_summary := parameters["fil_summary"].(string)
+	fil_createdAt := parameters["fil_createdAt"].(string)
+	fil_updatedAt := parameters["fil_updatedAt"].(string)
 
 	limit := -1
 	if strLimit != "" {
@@ -97,7 +104,7 @@ func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*
 	}
 	new_offset := (offset - 1) * limit
 	var posts []*model.Post
-	if err := db.client.Where("title LIKE ? or link LIKE ? or summary LIKE ?", "%"+filter+"%", "%"+filter+"%", "%"+filter+"%").Limit(limit).Offset(new_offset).Order(sortQuery).Preload("HistoryList").Find(&posts).Error; err != nil {
+	if err := db.client.Where("category LIKE ? and title LIKE ? and link LIKE ? and publish_date LIKE ? and summary LIKE ? and created_at LIKE ? and updated_at LIKE ? ", "%"+category+"%", "%"+fil_title+"%", "%"+fil_link+"%", "%"+fil_publish_date+"%", "%"+fil_summary+"%", "%"+fil_createdAt+"%", "%"+fil_updatedAt+"%").Limit(limit).Offset(new_offset).Order(sortQuery).Preload("HistoryList").Find(&posts).Error; err != nil {
 		return nil, err
 	}
 	return posts, nil

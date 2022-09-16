@@ -64,13 +64,26 @@ func (c *fetchPostsController) GetAllPosts(w http.ResponseWriter, r *http.Reques
 	sortBy := r.URL.Query().Get("sortBy")
 	strLimit := r.URL.Query().Get("strLimit")
 	strOffset := r.URL.Query().Get("strOffset")
-	filter := r.URL.Query().Get("filter")
+	category := r.URL.Query().Get("category")
+	fil_title := r.URL.Query().Get("fil_title")
+	fil_link := r.URL.Query().Get("fil_link")
+	fil_publish_date := r.URL.Query().Get("fil_publish_date")
+	fil_summary := r.URL.Query().Get("fil_summary")
+	fil_createdAt := r.URL.Query().Get("fil_createdAt")
+	fil_updatedAt := r.URL.Query().Get("fil_updatedAt")
 
 	parameters := map[string]interface{}{
 		"sortBy":    sortBy,
 		"strLimit":  strLimit,
 		"strOffset": strOffset,
-		"filter":    filter,
+		"category":  category,
+		// filter by field
+		"fil_title":        fil_title,
+		"fil_link":         fil_link,
+		"fil_publish_date": fil_publish_date,
+		"fil_summary":      fil_summary,
+		"fil_createdAt":    fil_createdAt,
+		"fil_updatedAt":    fil_updatedAt,
 	}
 
 	posts, err := c.service.GetAllPosts(parameters)
