@@ -4,7 +4,7 @@ import (
 	"rss/internal/model"
 	"rss/pkg/gormquery"
 	"strconv"
-
+	"time"
 	"github.com/mmcdole/gofeed"
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
@@ -30,12 +30,17 @@ func NewFetchPostsStorage(client *gorm.DB, logger *logrus.Logger) FetchPostsStor
 }
 
 func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) {
+	
 	for _, item := range items {
+		parsed_time, err := time.Parse(time.RFC1123Z, item.Published)
+		if err != nil {
+			db.logger.Warn(err)
+		}
 		post := model.Post{
 			Category:     category,
 			Title:        item.Title,
 			Link:         item.Link,
-			Publish_date: item.PublishedParsed,
+			Publish_date: parsed_time,
 			Summary:      item.Description,
 		}
 		old_post := post

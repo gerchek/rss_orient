@@ -1,6 +1,0 @@
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-14T06:11:23Z"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-14T06:11:23Z"}
-{"file":"postgresql.go:104","func":"rss/internal/services/fetchPosts/storage.(*fetchPostsStorage).GetAll()","level":"warning","msg":"malformed orderdirection in sortBy query parameter, should be asc or desc","time":"2022-09-14T06:20:52Z"}
-{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: lookup www.atavatan-turkmenistan.com: Temporary failure in name resolution","time":"2022-09-14T08:04:10Z"}
-{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: lookup www.atavatan-turkmenistan.com: no such host","time":"2022-09-14T08:24:46Z"}
-{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: i/o timeout","time":"2022-09-14T08:35:16Z"}

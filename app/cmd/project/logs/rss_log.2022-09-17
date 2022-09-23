@@ -1,0 +1,6 @@
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-09-17T06:21:47Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-09-17T06:21:47Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: i/o timeout","time":"2022-09-17T11:08:36Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: i/o timeout","time":"2022-09-17T11:39:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: lookup www.atavatan-turkmenistan.com: Temporary failure in name resolution","time":"2022-09-17T16:05:32Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://www.atavatan-turkmenistan.com/feed/: dial tcp: i/o timeout","time":"2022-09-17T17:48:02Z"}
