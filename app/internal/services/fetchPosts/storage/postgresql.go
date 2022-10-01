@@ -41,6 +41,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 			Title:        item.Title,
 			Link:         item.Link,
 			Publish_date: parsed_time,
+			Str_pub_date: item.Published,
 			Summary:      item.Description,
 		}
 		old_post := post
@@ -49,7 +50,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 		if r.RowsAffected == 0 {
 			db.client.Create(&post)
 		} else {
-			if old_post.Publish_date != post.Publish_date {
+			if old_post.Str_pub_date != post.Str_pub_date {
 				//str := fmt.Sprintf("%s updated to %s", post.Date, new_post.Date)
 				history := model.History{
 					Old_published_at: old_post.Publish_date,
@@ -101,7 +102,7 @@ func (db *fetchPostsStorage) GetAll(parameters map[string]interface{}) (data []*
 		}
 	}
 	if sortBy == "" {
-		sortBy = "id.asc"
+		sortBy = "id.desc"
 	}
 	sortQuery, err := gormquery.ValidateAndReturnSortQuery(sortBy)
 	if err != nil {

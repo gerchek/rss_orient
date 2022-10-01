@@ -8,10 +8,11 @@ type Post struct {
 	Title        string     `json:"title"`
 	Link         string     `gorm:"unique" json:"link"`
 	Publish_date time.Time `json:"publish_date"`
+	Str_pub_date string    `json:"str_pub_date"`
 	Summary      string     `json:"summary"`
 	HistoryList  []History  `gorm:"foreignKey:PostID;constraint:onDelete:SET NULL,onUpdate:CASCADE"`
-	CreatedAt    time.Time  `json:"createdAt"`
-	UpdatedAt    time.Time  `json:"updatedAt"`
+	CreatedAt    time.Time  `json:"created_at"`
+	UpdatedAt    time.Time  `json:"updated_at"`
 }
 
 type History struct {
