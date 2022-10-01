@@ -61,7 +61,7 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 				if err != nil {
 					db.logger.Warn(err)
 				}
-				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Update("publish_date", post.Publish_date).Error; err != nil {
+				if err := db.client.Model(model.Post{}).Where("id = ?", old_post.ID).Updates(map[string]interface{}{"publish_date": post.Publish_date, "str_pub_date": post.Str_pub_date}).Error; err != nil {
 					db.logger.Warn(err)
 				}
 			}
