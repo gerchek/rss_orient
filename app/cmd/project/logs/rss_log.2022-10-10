@@ -1,0 +1,153 @@
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:06:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:17:24Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:27:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:38:28Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:48:59Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T00:59:29Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T01:09:59Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T01:20:29Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T01:31:00Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T01:41:30Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T01:52:01Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:02:34Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:13:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:23:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:34:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:44:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T02:55:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:05:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:16:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:26:36Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:37:06Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:47:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T03:58:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T04:08:37Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T04:19:08Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T04:29:38Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T04:40:08Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T04:50:39Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:01:10Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:11:46Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:22:17Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:32:47Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:43:18Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T05:53:48Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:04:19Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:14:49Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:25:21Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:35:50Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:46:21Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T06:56:52Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:07:22Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:17:51Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:28:22Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:38:52Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:49:22Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T07:59:52Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T08:10:24Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T08:20:55Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T08:31:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T08:41:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T08:52:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:02:57Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:13:27Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:23:57Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:34:29Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:44:58Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T09:55:32Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:06:02Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:16:32Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:27:02Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:37:32Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:48:02Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-10-10T10:53:56Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-10-10T10:53:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T10:54:33Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:05:03Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:15:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:26:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:36:40Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-10-10T11:45:05Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-10-10T11:45:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:45:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T11:56:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T12:06:38Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T12:17:10Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T12:27:39Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: i/o timeout","time":"2022-10-10T12:38:30Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: i/o timeout","time":"2022-10-10T12:49:22Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: i/o timeout","time":"2022-10-10T13:00:12Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: i/o timeout","time":"2022-10-10T13:11:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: i/o timeout","time":"2022-10-10T13:21:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://salamnews.tm/ru: dial tcp 217.174.231.194:443: connect: connection refused","time":"2022-10-10T13:32:25Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T13:42:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T13:53:23Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T14:03:52Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T14:14:21Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T14:24:51Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T14:35:19Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 502 Bad Gateway","time":"2022-10-10T14:45:49Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T14:56:21Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:06:53Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:17:37Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:28:07Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:38:38Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:49:08Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T15:59:40Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T16:10:10Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T16:20:40Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T16:31:11Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T16:41:41Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T16:52:10Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:02:45Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:13:18Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:23:48Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:34:19Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:44:49Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T17:55:20Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:05:50Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:16:21Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:26:53Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:37:25Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:47:55Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T18:58:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T19:08:55Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T19:19:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T19:29:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T19:40:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T19:50:36Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T19:50:55Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:01:25Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:11:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:22:25Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T20:32:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:32:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T20:43:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:43:36Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T20:53:46Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T20:54:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T21:04:16Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:04:35Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T21:14:45Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:15:05Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T21:25:15Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:25:34Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:36:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:46:34Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T21:57:04Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T22:07:33Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T22:17:44Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T22:18:03Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 500 Internal Server Error","time":"2022-10-10T22:28:13Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T22:28:32Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T22:38:42Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T22:39:01Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Get https://turkmenportal.com/rss: dial tcp 95.85.126.182:443: connect: connection refused","time":"2022-10-10T22:49:11Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T22:49:31Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"http error: 500 Internal Server Error","time":"2022-10-10T22:59:41Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:00:00Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:10:29Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:20:59Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:31:28Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:41:57Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-10T23:52:27Z"}

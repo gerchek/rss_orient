@@ -1,2 +1,0 @@
-{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-10-01T04:48:03Z"}
-{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-10-01T04:48:03Z"}

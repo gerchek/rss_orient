@@ -4,7 +4,6 @@ import (
 	"rss/internal/model"
 	"rss/internal/services/rssLinks/dto"
 	"rss/internal/services/rssLinks/storage"
-
 	"github.com/sirupsen/logrus"
 )
 
@@ -44,6 +43,8 @@ func (s *rssLinksService) LinkCreate(linkDto dto.LinkDto) (*model.Link, error) {
 	link := &model.Link{
 		Name:   linkDto.Name,
 		Source: linkDto.Source,
+		//CreatedAt: time.Now().Local().Add(time.Hour * time.Duration(5)),
+		//UpdatedAt: time.Now().Local().Add(time.Hour * time.Duration(5)),
 	}
 	link, err := s.storage.LinkCreate(link)
 	if err != nil {
@@ -86,7 +87,7 @@ func (s *rssLinksService) LinkUpdate(linkDTO dto.LinkDto, id int) (data *model.L
 
 	oldLink.Source = linkDTO.Source
 	oldLink.Name = linkDTO.Name
-
+	//oldLink.UpdatedAt = time.Now().Local().Add(time.Hour * time.Duration(5))
 	data, err = s.storage.LinkUpdate(&oldLink)
 	if err != nil {
 		return nil, err

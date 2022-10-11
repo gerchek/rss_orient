@@ -1,0 +1,28 @@
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:02:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:13:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:23:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:34:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:44:56Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T00:55:25Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:05:55Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:16:24Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:26:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:37:24Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:47:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T01:58:24Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T02:08:53Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T02:19:23Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T02:29:53Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T02:40:23Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T02:50:53Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:01:23Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:11:52Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:22:22Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:32:54Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:43:26Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T03:53:57Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T04:04:27Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T04:14:58Z"}
+{"file":"main.go:18","func":"main.main()","level":"info","msg":"setting up all repository, service, controller...","time":"2022-10-11T04:25:58Z"}
+{"file":"main.go:21","func":"main.main()","level":"info","msg":"initializing a new app...","time":"2022-10-11T04:25:58Z"}
+{"file":"service.go:39","func":"rss/internal/services/fetchPosts/service.(*fetchPostsService).Fetch()","level":"warning","msg":"Failed to detect feed type","time":"2022-10-11T04:26:28Z"}

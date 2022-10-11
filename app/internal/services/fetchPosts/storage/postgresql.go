@@ -43,6 +43,8 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 			Publish_date: parsed_time,
 			Str_pub_date: item.Published,
 			Summary:      item.Description,
+			//CreatedAt:    time.Now().Local().Add(time.Hour * time.Duration(5)),
+			//UpdatedAt:    time.Now().Local().Add(time.Hour * time.Duration(5)),
 		}
 		old_post := post
 
@@ -56,6 +58,8 @@ func (db *fetchPostsStorage) CreatePosts(items []*gofeed.Item, category string) 
 					Old_published_at: old_post.Publish_date,
 					New_published_at: post.Publish_date,
 					PostID:           old_post.ID,
+					//CreatedAt:    time.Now().Local().Add(time.Hour * time.Duration(5)),
+					//UpdatedAt:    time.Now().Local().Add(time.Hour * time.Duration(5)),
 				}
 				err := db.client.Model(&old_post).Association("HistoryList").Append(&history)
 				if err != nil {
